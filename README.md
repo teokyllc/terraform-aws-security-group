@@ -10,7 +10,7 @@ You can use versioned release tags to ensure that your project using this module
 <b>Repo latest commit</b><br>
 ```
 module "security-group" {
-  source = "github.com/Medality-Health/terraform-aws-security-group"
+  source = "github.com/teokyllc/terraform-aws-security-group"
   ...
 ```
 <br>
@@ -19,7 +19,7 @@ module "security-group" {
 
 ```
 module "security-group" {
-  source = "github.com/Medality-Health/terraform-aws-security-group?ref=1.0.0"
+  source = "github.com/teokyllc/terraform-aws-security-group?ref=1.0"
   ...
 ```
 <br>
@@ -29,7 +29,7 @@ This is an example of using this module to create a security group with policies
 
 ```
 module "security-group" {
-  source = "github.com/Medality-Health/terraform-aws-security-group?ref=1.0.0"
+  source = "github.com/teokyllc/terraform-aws-security-group?ref=1.0"
   security_group_name        = "Example-HTTP-SG"
   security_group_description = "An example security group allowing port 80."
   vpc_id                     = module.vpc.vpc_id
@@ -51,7 +51,7 @@ module "security-group" {
 <br><br>
 Module can be tested locally:<br>
 ```
-git clone https://github.com/Medality-Health/terraform-aws-security-group.git
+git clone https://github.com/teokyllc/terraform-aws-security-group.git
 cd terraform-aws-security-group
 
 cat <<EOF > security-group.auto.tfvars
